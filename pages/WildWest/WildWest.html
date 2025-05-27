@@ -3,134 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildwest - Hopi Hari</title>
-    <link rel="stylesheet" href="CSS/wildwest.css">
+    <title>Dashboard - Hopi Hari</title>
+    <link rel="stylesheet" href="/CSS/WildWest.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.png" alt="Logo Hopi Hari">
+                    <img src="/imagem/logo.png" alt="Logo Hopi Hari">
                 </div>
                 <div class="user-menu">
                     <div class="user-info">
                         <div class="user-name" id="user-name">Bem-vindo(a)</div>
                         <div class="user-email" id="user-email"></div>
                     </div>
-                    <form action="dashboard.html">
-                        <button class="logout-btn" >Voltar</button>
-                    </form>
-                    
-
+                    <button class="logout-btn" id="logout-btn">Voltar</button>
                 </div>
             </div>
         </div>
     </header>
-    
-   
 
-    <div class="container">
-        <div class="rides-grid">
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Rio_Bravo.png')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Rio Bravo</h3>
-                    <div class="ride-time">35 min</div>
-                    <span class="ride-status status-busy">Muito Movimentado</span>
+    <main class="main-content">
+        <h2 class="section-title">Wild West</h2>
+        <div class="dashboard-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/rio bravo.jpg" alt="Passeio de bote em corredeiras - Rio Bravo">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Rio Bravo</h3>
+                    <p class="card-text">Passeio de bote em corredeiras com muitas chances de se molhar.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Rio Bravo</h3>
+                        <div class="ride-time">35 min</div>
+                        <span class="ride-status status-busy">Muito Movimentado</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Ghosti\ Hotel.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Ghosti Hotel</h3>
-                    <div class="ride-time">15 min</div>
-                    <span class="ride-status status-open">Normal</span>
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/evolution.jpg" alt="Brinquedo Evolution girando 360°">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Evolution</h3>
+                    <p class="card-text">Brinquedo que gira em 360° no eixo vertical — forte adrenalina.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Evolution</h3>
+                        <div class="ride-time">15 min</div>
+                        <span class="ride-status status-open">Normal</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/La_Mina_del_Joe_Sacramento.webp')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">La Mina del Joe Sacramento</h3>
-                    <div class="ride-time">20 min</div>
-                    <span class="ride-status status-open">Normal</span>
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/hotelfantasma.jpg" alt="Ghosti Hotel mal-assombrado com atores">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ghosti Hotel</h3>
+                    <p class="card-text">Hotel mal-assombrado com atores e sustos.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Ghosti Hotel</h3>
+                        <div class="ride-time">35 min</div>
+                        <span class="ride-status status-maintenance">Manutenção</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Evolution.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Evolution</h3>
-                    <div class="ride-time">25 min</div>
-                    <span class="ride-status status-busy">Movimentado</span>
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/hotel2.jpg" alt="Hotel temático de terror - West River Hotel">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">West River Hotel</h3>
+                    <p class="card-text">Atração temática de terror durante a Hora do Horror.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">West River Hotel</h3>
+                        <div class="ride-time">25 min</div>
+                        <span class="ride-status status-open">Normal</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Spleshi.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Spleshi</h3>
-                    <div class="ride-time">40 min</div>
-                    <span class="ride-status status-busy">Muito Movimentado</span>
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/old west show.jpeg" alt="Show com cowboys e música country - Old West Show">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Old West Show</h3>
+                    <p class="card-text">Apresentações com cowboys, danças e música country.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Old West Show</h3>
+                        <div class="ride-time">25 min</div>
+                        <span class="ride-status status-open">Normal</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
                 </div>
             </div>
-
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Tirolesa.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Tirolesa</h3>
-                    <div class="ride-time">10 min</div>
-                    <span class="ride-status status-open">Normal</span>
-                </div>
-            </div>
-
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Bravo_Bull.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Bravo Bull</h3>
-                    <div class="ride-time">0 min</div>
-                    <span class="ride-status status-maintenance">Em Manutenção</span>
-                </div>
-            </div>
-
-        <div class="ride-card">
-            <div class="ride-image" style="background-image: url('img/Vamvolari.webp')"></div>
-            <div class="ride-info">
-                <h3 class="ride-name">Vamvolari</h3>
-                <div class="ride-time">10 min</div>
-                <span class="ride-status status-open">Normal</span>
-            </div>
-        </div>
-
-        <p class="last-update">Última atualização: 25/04/2025 15:42</p>
-    </div>
-
-    <div class="footer">
-        &copy; 2025 Parque HOPIhARI - Sistema de Gerenciamento de Filas
-    </div>
+        </div> <!-- Fim das cards -->
+    </main>
 
     <script>
-        // Código para atualização em tempo real
-        function atualizarTemposEspera() {
-            // Em uma implementação real, aqui faria uma chamada AJAX para o servidor
-            // para obter os dados atualizados das filas
-            
-            // Simulação de atualização para demonstração
-            const agora = new Date();
-            document.querySelector('.last-update').textContent = 
-                `Última atualização: ${agora.toLocaleDateString()} ${agora.toLocaleTimeString()}`;
-        }
-
-        // Atualizar a cada 30 segundos
-        setInterval(atualizarTemposEspera, 30000);
-    </script>
-    
-    
-
-    <script>
-        // Verificar se há um usuário logado
         document.addEventListener('DOMContentLoaded', function() {
             const userData = JSON.parse(localStorage.getItem('user')) || {};
             
@@ -138,27 +117,28 @@
                 document.getElementById('user-name').textContent = `Olá, ${userData.firstName}!`;
                 document.getElementById('user-email').textContent = userData.email;
             } else {
-                // Redirecionar para a página de login se não houver usuário
                 window.location.href = '/';
             }
-            
-            // Botão de logout
-            document.getElementById('logout-btn').addEventListener('click', function() {
+
+            document.getElementById('logout-btn').addEventListener('click', function () {
                 localStorage.removeItem('user');
                 window.location.href = '/';
             });
-            
-            // Toggle do menu lateral (para mobile)
-            document.getElementById('menu-toggle').addEventListener('click', function() {
-                document.getElementById('sidebar').classList.toggle('active');
-            });
-            
-            // Fechar menu ao clicar em um item (para mobile)
+
+            // Menu lateral (se aplicável)
+            const toggleBtn = document.getElementById('menu-toggle');
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function () {
+                    document.getElementById('sidebar').classList.toggle('active');
+                });
+            }
+
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
-                link.addEventListener('click', function() {
+                link.addEventListener('click', function () {
                     if (window.innerWidth <= 992) {
-                        document.getElementById('sidebar').classList.remove('active');
+                        const sidebar = document.getElementById('sidebar');
+                        if (sidebar) sidebar.classList.remove('active');
                     }
                 });
             });

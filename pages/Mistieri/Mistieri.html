@@ -3,143 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mistieri - Hopi Hari</title>
-    <link rel="stylesheet" href="CSS/mistieri.css">
+    <title>Dashboard - Hopi Hari</title>
+    <link rel="stylesheet" href="/CSS/Mistieri.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.png" alt="Logo Hopi Hari">
+                    <img src="/pages/others/img/logo.png" alt="Logo Hopi Hari">
                 </div>
                 <div class="user-menu">
                     <div class="user-info">
                         <div class="user-name" id="user-name">Bem-vindo(a)</div>
                         <div class="user-email" id="user-email"></div>
                     </div>
-                    <form action="dashboard.html">
-                        <button class="logout-btn" >Voltar</button>
+                    <form action="/dashboard.html">
+                        <button class="logout-btn" id="logout-btn">Voltar</button>
                     </form>
-                    
-
                 </div>
             </div>
         </div>
     </header>
-    
-   
 
-    <div class="container">
-        <div class="rides-grid">
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Montezum.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Montezum</h3>
-                    <div class="ride-time">35 min</div>
-                    <span class="ride-status status-busy">Muito Movimentado</span>
+    <main class="main-content">
+        <h2 class="section-title">Mistieri</h2>
+        <div class="dashboard-cards">
+
+            <!-- Montezum -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/montezum.jpg" alt="Montanha-Russa Montezum">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Montezum</h3>
+                    <p class="card-text">Maior montanha-russa de madeira da América Latina, com 58 metros de altura.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Montezum</h3>
+                        <div class="ride-time">35 min</div>
+                        <span class="ride-status status-busy">Muito Movimentado</span>
+                    </div>
+                    <a href="#" class="card-button" aria-label="Saiba mais sobre Montezum">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Vurang.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Vurang</h3>
-                    <div class="ride-time">15 min</div>
-                    <span class="ride-status status-open">Normal</span>
+            <!-- Vurang -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/Vurang-2-1.png" alt="Montanha-Russa Vurang">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Vurang</h3>
+                    <p class="card-text">Montanha-russa no escuro com carrinhos que giram enquanto percorrem a trilha.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Vurang</h3>
+                        <div class="ride-time">15 min</div>
+                        <span class="ride-status status-open">Normal</span>
+                    </div>
+                    <a href="#" class="card-button" aria-label="Saiba mais sobre Vurang">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Ekatomb_Annunaki.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Ekatomb Annunnaki</h3>
-                    <div class="ride-time">20 min</div>
-                    <span class="ride-status status-open">Normal</span>
+            <!-- Katakumb -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/Katakumb.png" alt="Katakumb - Dark Ride">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Katakumb</h3>
+                    <p class="card-text">Atração indoor com cenários egípcios e sustos — tipo dark ride de terror.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Katakumb</h3>
+                        <div class="ride-time">35 min</div>
+                        <span class="ride-status status-maintenance">Manutenção</span>
+                    </div>
+                    <a href="#" class="card-button" aria-label="Saiba mais sobre Katakumb">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Vulaviking.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Vulaviking</h3>
-                    <div class="ride-time">25 min</div>
-                    <span class="ride-status status-busy">Movimentado</span>
+            <!-- Simulákron -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imagem/ekatomb.png" alt="Ekatomb">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ekatomb</h3>
+                    <p class="card-text"> Brinquedo giratório que gira em múltiplos eixos (tipo top spin)</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Ekatomb</h3>
+                        <div class="ride-time">25 min</div>
+                        <span class="ride-status status-open">Normal</span>
+                    </div>
+                    <a href="#" class="card-button" aria-label="Saiba mais sobre Simulákron">Saiba Mais</a>
                 </div>
             </div>
 
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Katakumb.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Katakumb</h3>
-                    <div class="ride-time">40 min</div>
-                    <span class="ride-status status-busy">Muito Movimentado</span>
-                </div>
-            </div>
-
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Simulákron.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Simulákron</h3>
-                    <div class="ride-time">10 min</div>
-                    <span class="ride-status status-open">Normal</span>
-                </div>
-            </div>
-
-
-        <p class="last-update">Última atualização: 25/04/2025 15:42</p>
-    </div>
-
-    <div class="footer">
-        &copy; 2025 Parque HOPIhARI - Sistema de Gerenciamento de Filas
-    </div>
+        </div> <!-- fim das cards -->
+    </main>
 
     <script>
-        // Código para atualização em tempo real
-        function atualizarTemposEspera() {
-            // Em uma implementação real, aqui faria uma chamada AJAX para o servidor
-            // para obter os dados atualizados das filas
-            
-            // Simulação de atualização para demonstração
-            const agora = new Date();
-            document.querySelector('.last-update').textContent = 
-                `Última atualização: ${agora.toLocaleDateString()} ${agora.toLocaleTimeString()}`;
-        }
-
-        // Atualizar a cada 30 segundos
-        setInterval(atualizarTemposEspera, 30000);
-    </script>
-    
-    
-
-    <script>
-        // Verificar se há um usuário logado
         document.addEventListener('DOMContentLoaded', function() {
             const userData = JSON.parse(localStorage.getItem('user')) || {};
-            
+
             if (userData.firstName) {
                 document.getElementById('user-name').textContent = `Olá, ${userData.firstName}!`;
                 document.getElementById('user-email').textContent = userData.email;
             } else {
-                // Redirecionar para a página de login se não houver usuário
                 window.location.href = '/';
             }
-            
-            // Botão de logout
+
             document.getElementById('logout-btn').addEventListener('click', function() {
                 localStorage.removeItem('user');
                 window.location.href = '/';
             });
-            
-            // Toggle do menu lateral (para mobile)
-            document.getElementById('menu-toggle').addEventListener('click', function() {
-                document.getElementById('sidebar').classList.toggle('active');
-            });
-            
-            // Fechar menu ao clicar em um item (para mobile)
+
+            const toggle = document.getElementById('menu-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', function () {
+                    document.getElementById('sidebar').classList.toggle('active');
+                });
+            }
+
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
-                link.addEventListener('click', function() {
+                link.addEventListener('click', function () {
                     if (window.innerWidth <= 992) {
                         document.getElementById('sidebar').classList.remove('active');
                     }

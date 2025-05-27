@@ -1,97 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <link rel="stylesheet" href="/CSS/KamindaMundi.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamindamundi - Hopi Hari</title>
-    <link rel="stylesheet" href="CSS/kamindamundi.css">
+    <title>Dashboard - Hopi Hari</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="img/logo.png" alt="Logo Hopi Hari">
+                    <img src="/pages/others/img/logo.png" alt="Logo Hopi Hari">
                 </div>
                 <div class="user-menu">
                     <div class="user-info">
                         <div class="user-name" id="user-name">Bem-vindo(a)</div>
                         <div class="user-email" id="user-email"></div>
                     </div>
-                    <form action="dashboard.html">
+                     <form action="dashboard.html">
                         <button class="logout-btn" >Voltar</button>
                     </form>
-                    
-
                 </div>
             </div>
         </div>
     </header>
     
-   
-
-    <div class="container">
-        <div class="rides-grid">
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Giranda_Mundi.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Giranda Mundi</h3>
-                    <div class="ride-time">35 min</div>
-                    <span class="ride-status status-busy">Muito Movimentado</span>
+    
+    
+    <main class="main-content">
+       
+        
+        <h2 class="section-title">Kaminda Mundi</h2>
+        <div class="dashboard-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="imagem/torre.jpg" alt="Montanha-Russa La Tour Eiffel">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title"> La Tour Eiffel </h3>
+                    <p class="card-text">Torre de queda livre com 69 metros de altura — pura adrenalina.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name"> La Tour Eiffel </h3>
+                        <div class="ride-time">35 min</div>
+                        <span class="ride-status status-busy">Muito Movimentado</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
                 </div>
             </div>
-
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Theatro_di_Kaminda.webp')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Theatro di Kaminda</h3>
-                    <div class="ride-time">15 min</div>
-                    <span class="ride-status status-open">Normal</span>
-                </div>
-            </div>
-
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Jogakí_di_Kaminda.jpg')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Jogakí di Kaminda</h3>
-                    <div class="ride-time">20 min</div>
-                    <span class="ride-status status-open">Normal</span>
-                </div>
-            </div>
-
-            <div class="ride-card">
-                <div class="ride-image" style="background-image: url('img/Le_Voyage.jfif')"></div>
-                <div class="ride-info">
-                    <h3 class="ride-name">Le Voyage</h3>
-                    <div class="ride-time">25 min</div>
-                    <span class="ride-status status-busy">Movimentado</span>
-                </div>
-            </div>
-
-        <p class="last-update">Última atualização: 25/04/2025 15:42</p>
-    </div>
-
-    <div class="footer">
-        &copy; 2025 Parque HOPIhARI - Sistema de Gerenciamento de Filas
-    </div>
-
-    <script>
-        // Código para atualização em tempo real
-        function atualizarTemposEspera() {
-            // Em uma implementação real, aqui faria uma chamada AJAX para o servidor
-            // para obter os dados atualizados das filas
             
-            // Simulação de atualização para demonstração
-            const agora = new Date();
-            document.querySelector('.last-update').textContent = 
-                `Última atualização: ${agora.toLocaleDateString()} ${agora.toLocaleTimeString()}`;
-        }
-
-        // Atualizar a cada 30 segundos
-        setInterval(atualizarTemposEspera, 30000);
-    </script>
-    
-    
+            <div class="card">
+                <div class="card-image">
+                    <img src="imagem/cine kaminda.jpg" alt="Cine Kaminda">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Cine Kaminda</h3>
+                    <p class="card-text">Cinema com curtas e filmes 3D, usado também em eventos.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Cine Kaminda</h3>
+                        <div class="ride-time">15 min</div>
+                        <span class="ride-status status-open">Normal</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <img src="imagem/carrossel.jpg  " alt="Carrossel di kaminda">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Carrossel di Kaminda</h3>
+                    <p class="card-text">Segundo carrossel do parque, com design europeu clássico.</p>
+                    <div class="ride-info">
+                        <h3 class="ride-name">Carrossel di Kaminda</h3>
+                        <div class="ride-time">35 min</div>
+                        <span class="ride-status status-maintenance">Manutenção</span>
+                    </div>
+                    <a href="#" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+            
+            
+        
+    </main>
 
     <script>
         // Verificar se há um usuário logado

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Hopi Hari</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
     <div class="login-container">
+        <form action="adm_login.html">
+            <button class="logout-btn" >Admin</button>
+        </form>
         <div class="login-logo">
-            <img src="../others/img/logo.png" alt="Logo Hopi Hari">
+            <img src="/pages/others/img/logo.png" alt="Logo Hopi Hari">
         </div>
         <h1>Área do Visitante</h1>
         <form id="loginForm">
@@ -32,11 +35,12 @@
             </div>
             <button type="submit" class="login-btn">ENTRAR</button>
             <div class="register">
-                Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+                Ainda não tem conta? <a href="/pages/others/cadastro.html">Cadastre-se</a>
             </div>
         </form>
+        
     </div>
 
-    <script src="./script.js"></script>
+    <script src = "./script.js"></script>
 </body>
 </html>
