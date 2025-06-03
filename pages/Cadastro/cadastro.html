@@ -58,7 +58,7 @@
         document.getElementById('registerForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Verificação de senha
+
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirmPassword').value;
             
@@ -67,7 +67,7 @@
                 return;
             }
             
-            // Preparar dados para envio
+
             const formData = {
                 firstName: document.getElementById('firstName').value,
                 lastName: document.getElementById('lastName').value,
