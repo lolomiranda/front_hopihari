@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página do Usuário</title>
+    <link rel="stylesheet" href="userpage.css">
+</head>
+<body>
+    <div class="userpage-container">
+        <div class="userpage-header">
+            <img src="/pages/others/img/fotoPerfil.webp" alt="Foto do Usuário" class="userpage-avatar">
+            <h1>Bem-Vindo<span id="first_name"></span>!</h1>
+        </div>
+        <div class="userpage-info">
+            <p><strong>Nome:</strong> <span id="first_name_value"></span></p>
+            <p><strong>Sobrenome:</strong> <span id="last_name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Data de Nascimento:</strong> <span id="birth_date"></span></p>
+            <p><strong>Telefone:</strong> <span id="phone"></span></p>
+        </div>
+        <div class="userpage-actions">
+            <button class="userpage-btn" id="editProfile">Editar Perfil</button>
+            <form action="/pages/Dashboard/dashboard.html">
+                <button class="userpage-btn logout" id="logout">Sair</button>
+            </form>
+        </div>
+ 
+
+
+    <script src="userpage.js"></script>
+
+    <div class="footer">
+        &copy; 2025 Parque HOPIHARI - Perfil de usuário
+    </div>
+    
+</body>
+</html>
