@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async function(){
         const grid = document.querySelector(".rides-grid");
         grid.innerHTML = grid.innerHTML + `
         <div class="ride-card">
-            <div class="ride-image" style="background-image: url('../others/img/Katapul.jpg')"></div>
+            <div class="ride-image" style="background-image: url('../others/img/${brinquedos.image}')"></div>
             <div class="ride-info">
                <h3 class="ride-name">${brinquedos.name}</h3>
                <div class="ride-time">${brinquedos.waiting_time}</div>
